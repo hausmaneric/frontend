@@ -141,3 +141,45 @@ p{
     }
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .cards-skill{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+
+    .card-skill {
+      width: 49%;
+      height: 180px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #171826, #2c2f3b);
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      padding: 1%;
+
+      img{
+        width: 100%;
+        height: 120px;
+        object-fit: contain;
+        object-position: center;
+        margin-bottom: 10px;
+      }
+
+      p{
+        font-size: 18px;
+        font-weight: 500;
+        color: #007bff;
+        text-align: center;
+      }
+    }
+
+    .card-skill:hover {
+      background-color: #171826;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      transform: translateY(-10px);
+    }
+  }
+}

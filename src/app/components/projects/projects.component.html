@@ -1,0 +1,33 @@
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Projetos</h2>
+    <div class="row">
+      @for (project of projects; track $index) {
+        <div class="col-md-6 animate-item" data-aos="zoom-in">
+          <div class="card">
+            <div id="carousel{{ project.id }}" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                @for (image of project.images; track $index) {
+                  <div class="carousel-item" [class.active]="$index === 0">
+                    <img [src]="image" class="d-block w-100" alt="Project Image" />
+                  </div>
+                }
+              </div>
+              <a class="carousel-control-prev" href="#carousel{{ project.id }}" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" style="color: black !important;" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next" href="#carousel{{ project.id }}" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ project.title }}</h5>
+              <p class="card-text">{{ project.description }}</p>
+              <!-- <a [href]="project.link" class="btn" target="_blank">Ver Projeto</a> -->
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

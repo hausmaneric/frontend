@@ -1,0 +1,143 @@
+.about-section {
+  background: linear-gradient(135deg, #1f1f1f, #3d3d3d) !important;
+  padding-bottom: 10px !important;
+  padding-top: 20px !important;
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 15px;
+  }
+}
+
+p{
+  text-align: left;
+  span{
+    font-weight: 700;
+  }
+}
+
+.section-title{
+  margin-top: 30px !important;
+}
+
+.cards-skill{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+
+  .card-skill {
+    width: 18%;
+    height: 180px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #171826, #2c2f3b);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 1%;
+
+    img{
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
+      object-position: center;
+      margin-bottom: 10px;
+    }
+
+    p{
+      font-size: 18px;
+      font-weight: 500;
+      color: #007bff;
+      text-align: center;
+    }
+  }
+
+  .card-skill:hover {
+    background-color: #171826;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+  }
+}
+
+.s-skill{
+  margin-top: 25px;
+  text-align: left;
+
+  h4{
+    color: #007bff;
+  }
+
+  .skills{
+    margin-top: 8px;
+    display: flex;
+    width: 100%;
+    // height: 60px;
+
+    .skill-left{
+      float: left;
+      width: 220px;
+      height: 100%;
+    }
+
+    .skill-left{
+      float: right;
+      width: 220px;
+      height: 100%;
+    }
+
+    p{
+      display: flex;
+      font-size: 16px;
+      color: white;
+      font-weight: 500;
+
+      span{
+        margin-top: -2px !important;
+        margin-right: 5px !important;
+        color: #007bff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cards-skill{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+
+    .card-skill {
+      width: 24%;
+      height: 180px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #171826, #2c2f3b);
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      padding: 1%;
+
+      img{
+        width: 100%;
+        height: 120px;
+        object-fit: contain;
+        object-position: center;
+        margin-bottom: 10px;
+      }
+
+      p{
+        font-size: 18px;
+        font-weight: 500;
+        color: #007bff;
+        text-align: center;
+      }
+    }
+
+    .card-skill:hover {
+      background-color: #171826;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      transform: translateY(-10px);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.card {
+  margin-top: 25px;
+}
+
+.carousel-inner {
+  background-color: #2a2a2a;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  margin-top: 10px;
+  left: 10%;
+  width: 80% !important;
+  position: relative;
+
+  img {
+    max-height: 250px !important;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, z-index 0.2s ease;
+    z-index: 1;
+  }
+
+  &:hover img {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+
+  &:not(:hover) img {
+    z-index: 1;
+  }
+}
+
+.btn{
+  background-color: #2a2a2a !important;
+  color: white;
+}
+
+.card-title{
+  font-weight: 500;
+}
+
+.card-text{
+  height: 80px;
+}

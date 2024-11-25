@@ -1,0 +1,47 @@
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Sobre Mim</h2>
+    <div class="row">
+      <div class="col-md-3 animate-item" data-aos="fade-right" style="background-color: red;">
+        <img src="sua-foto.jpg" alt="Sua foto" class="img-fluid rounded-circle" />
+      </div>
+      <div class="col-md-9 animate-item" data-aos="fade-left">
+        <p>
+          <span>Eric Hausman - Desenvolvedor Full Stack</span> <br> <br>
+          Olá, meu nome é Eric Hausman, sou um desenvolvedor Full Stack com experiência sólida em Angular e Python. Estou na área de tecnologia desde 2018 e, ao longo dos anos, desenvolvi um amplo conhecimento em diversas tecnologias, como HTML, CSS, JavaScript, TypeScript, Python, AWS e Git, além de ser especializado no framework Angular. <br> <br>
+          Atualmente, sou estudante de Engenharia de Software, sempre buscando expandir meus conhecimentos e aplicar as melhores práticas no desenvolvimento de sistemas e soluções. Sou natural de Volta Redonda, RJ, Brasil, e tenho 23 anos, nasci em 30 de junho de 2001. <br> <br>
+          Com uma sólida base de estudos e prática no desenvolvimento de aplicações tanto no front-end quanto no back-end, estou sempre em busca de novos desafios e oportunidades para aprimorar minhas habilidades e contribuir com soluções inovadoras e eficientes.
+        </p>
+      </div>
+    </div>
+    <h2 class="section-title animate-item"  data-aos="fade-up">Skills</h2>
+    <div class="cards-skill">
+      @for (card of cards; track $index) {
+        <div class="card-skill animate-item">
+          <img [src]="card.img" alt="">
+          <p>{{card.title}}</p>
+        </div>
+      }
+    </div>
+    <div class="s-skill">
+      <h4>Soft Skills</h4>
+      <div class="skills animate-item">
+        <div class="skill-left">
+          <p><span>&#9658;</span>Comunicação</p>
+          <p><span>&#9658;</span>Colaboração</p>
+          <p><span>&#9658;</span>Resolução</p>
+          <p><span>&#9658;</span>Adaptabilidade</p>
+          <p><span>&#9658;</span>Pontualidade</p>
+        </div>
+        <div class="skill-right">
+          <p><span>&#9658;</span>Detalhismo</p>
+          <p><span>&#9658;</span>Crítica</p>
+          <p><span>&#9658;</span>Criatividade</p>
+          <p><span>&#9658;</span>Autodidatismo</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>

@@ -1,0 +1,75 @@
+:host {
+  display: block;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  &:nth-child(odd) {
+    background-color: #1e1e1e;
+  }
+
+  &:nth-child(even) {
+    background-color: #121212;
+  }
+}
+
+a {
+  color: #bb86fc;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-chat{
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 5px;
+  background-color: #25D366;
+  opacity: 0.9;
+  display: flex;
+  cursor: pointer;
+}
+
+.custom-chat svg{
+  margin-left: 5px !important;
+  margin-top: 5px !important;
+  object-fit: contain;
+  opacity: 1 !important;
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.custom-chat a{
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  margin-top: 15px;
+  margin-left: 90px;
+  cursor: pointer;
+}

@@ -41,7 +41,7 @@ export class ProjectsComponent implements AfterViewInit {
       id: 5,
       title: 'CMS',
       description: 'Um sistema de controle de tarefas. O CMS foi construido com o framework Angular no Front e a linguagem Python, como api, no Back.',
-      images: ['../../../assets/CMS/Login.png', '../../../assets/CMS/Main.png', '../../../assets/CMS/Tasks.png', '../../../assets/CMS/Task_Edit.png'],
+      images: ['../../../assets/CMS/Login.png', '../../../assets/CMS/Main.png', '../../../assets/CMS/Tasks.png', '../../../assets/CMS/Task_Edit.png', '../../../assets/CMS/Task_Default.png'],
       link: '#',
     },
     {

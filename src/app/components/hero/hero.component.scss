@@ -28,3 +28,14 @@
     border-right-color: transparent;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    height: 100vh;
+    width: calc(100vw - 10px) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+}

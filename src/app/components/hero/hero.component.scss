@@ -1,5 +1,6 @@
 .hero {
   height: 100vh;
+  width: calc(100vw - 21px) !important;
   display: flex;
   justify-content: center;
   align-items: center;

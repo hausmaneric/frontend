@@ -42,11 +42,11 @@ a {
 
 .custom-chat{
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   bottom: 10px;
-  right: 5px;
+  right: 10px;
   background-color: #25D366;
   opacity: 0.9;
   display: flex;
@@ -54,7 +54,7 @@ a {
 }
 
 .custom-chat svg{
-  margin-left: 5px !important;
+  margin-left: 3px !important;
   margin-top: 5px !important;
   object-fit: contain;
   opacity: 1 !important;
